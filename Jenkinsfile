@@ -4,6 +4,9 @@ pipeline{
 
     agent any
     //agent { label 'Demo' }
+    environment {
+        SKIP_SONAR = 'true'  // Set to 'true' to skip this stage
+    }
 
     parameters{
 
